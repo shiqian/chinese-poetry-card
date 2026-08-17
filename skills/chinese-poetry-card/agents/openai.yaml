@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chinese Poetry Card"
+  short_description: "Generate poet-introduction and poem-analysis cards"
+  default_prompt: "Use $chinese-poetry-card to create a matched poet-introduction card and poem-analysis card for a Chinese poem, branded 羽言课堂."
