@@ -1,35 +1,49 @@
 # Card layout reference
 
-## Canvas
+The four images in `../assets/yueke-style-reference/` are the canonical series references. Use them to study both visual composition and content architecture: four complementary cards, their information density, panel arrangement, title hierarchy, and the progression from poem meaning to poet, hidden context, and modern idiom use. They are not content templates. Do not copy their wording, poet identity, historical facts, props, characters, or idiom into another poem's output.
 
-- Target size: 1086×1448 pixels.
-- Orientation: portrait.
-- Keep a narrow decorated outer margin and leave enough padding for the plaques.
+## Canvas and hierarchy
 
-## Fixed hierarchy
+- Default ratio: portrait 3:4. Use one exact pixel size consistently across all four cards; 1080×1440 is preferred for new sets, while an existing reference size may be preserved.
+- Use a narrow decorated outer margin, generous inner padding, and a scroll-shaped footer.
+- Place one large title plaque near the top. Do not repeat the same title in a second panel.
+- Keep the `羽言课堂` footer and one small feather motif consistent across all cards.
 
-1. Large title plaque near the top.
-2. Author plaque directly below the title.
-3. Main illustrated scene filling the middle field.
-4. Content plaque in the lower-left/center: poem text for `诗歌解析卡`, or concise biography for `诗人介绍卡`.
-5. Rounded explanation plaque in the lower-right: `诗意小课堂` and three bullets for `诗歌解析卡`; a matching child-friendly learning summary for `诗人介绍卡`.
-6. Scroll-shaped footer with the brand `羽言课堂` and one small elegant feather element.
+## Shared visual language
 
-## Visual language
+- hand-painted Chinese picture-book illustration with watercolor/gouache texture and restrained ink-wash influence;
+- parchment cream plaques, muted gold trim, dark green or charcoal-green text, and a calm warm palette;
+- first three cards: one consistent poet identity, period mood, and connected scene details;
+- idiom card: modern child-life illustration, with a blue title as a gentle content distinction while retaining the same frame and brand system;
+- preserve negative space behind text and avoid placing busy details under copy.
 
-Use hand-painted Chinese children's picture-book art with watercolor/gouache texture and a light ink-wash influence. Use parchment cream plaques, dark green or charcoal-green lettering, muted gold trim, and a green decorative outer frame. Adapt the scene palette to the poem while retaining the warm parchment/gold system.
+## Card-specific composition
 
-## Composition rules
+### 诗歌学习卡
 
-- Keep the title and poem text large enough for classroom viewing.
-- Avoid placing high-detail objects behind text plaques.
-- Use one clear visual subject or visual event that explains the poem.
-- Preserve calm negative space in the main illustration when the poem's mood is quiet.
-- Do not add unrelated characters, animals, modern props, brands, or decorative English copy.
-- The only brand mark is `羽言课堂`; use a subtle feather motif beside the footer brand.
+- Large poem title and `[朝代]作者` label.
+- Central scene directly depicting the poem's key imagery.
+- Lower content area uses two complementary but deliberately asymmetrical panels: a narrower poem slip on the left and a wider explanation panel on the right.
+- Remove the redundant `诗句` label when the poem text is visually self-evident; use `诗意小课堂` for the explanation panel.
+- Stagger the two panels' top or bottom edges subtly and avoid a heavy straight center divider. Keep the asymmetry calm and readable rather than decorative for its own sake.
+- Explanation is plain-language paraphrase only; do not place background research here.
 
-## Two-card system
+### 诗人简介卡
 
-- `诗人介绍卡`: focus the central illustration on the poet's era, literary world, or a generalized portrait scene. Use concise, verified facts suitable for children.
-- `诗歌解析卡`: focus the central illustration on the poem's imagery and retain the full poem plus three child-friendly interpretation bullets.
-- Both cards must share the same frame, palette, dimensions, footer brand, feather motif, and typography hierarchy.
+- Large title `诗人简介` only once.
+- One coherent information panel; do not split it into `诗人简介` and `冷知识`.
+- Include identity, dates, a memorable contrast or unusual fact, a sourced character judgment, literary group or representative works, and a short accessible description of poetic style.
+- Use a portrait or period study scene that expresses the poet's temperament, not a generic reusable poet face.
+
+### 诗歌背景卡
+
+- Title `诗歌背景` and poem title.
+- Scene should continue the poem card's world without duplicating the poet portrait unnecessarily.
+- Use a small set of clearly separated fact rows or illustrated callouts.
+- Explain hidden context: calendar terms, place names, people, objects, customs, soundscape, literary conventions, or historical setting.
+
+### 成语学习卡
+
+- Use the related idiom as the main title, preferably with a calm blue title treatment.
+- Show a contemporary child-friendly situation rather than a second ancient tableau.
+- Include `释义` and `例句`; keep examples natural and age-appropriate for children roughly 3–8.

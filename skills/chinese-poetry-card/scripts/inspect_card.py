@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check basic dimensions and file integrity for a poetry-card image."""
+"""Check basic dimensions and file integrity for one card or a four-card set."""
 
 from __future__ import annotations
 
@@ -33,22 +33,45 @@ def dimensions(path: Path) -> tuple[int, int, str]:
     raise ValueError("unsupported or unreadable image format")
 
 
-def main() -> int:
-    if len(sys.argv) != 2:
-        print("usage: inspect_card.py IMAGE", file=sys.stderr)
-        return 2
-    path = Path(sys.argv[1]).expanduser()
+def inspect_file(path: Path) -> tuple[int, tuple[int, int] | None]:
     if not path.is_file():
         print(f"FAIL: file not found: {path}", file=sys.stderr)
-        return 1
+        return 1, None
     try:
         width, height, fmt = dimensions(path)
     except (OSError, ValueError) as exc:
-        print(f"FAIL: {exc}", file=sys.stderr)
-        return 1
-    status = "PASS" if (width, height) == (1086, 1448) else "WARN"
+        print(f"FAIL: {path} | {exc}", file=sys.stderr)
+        return 1, None
+    ratio_ok = abs((width / height) - 0.75) < 0.002
+    status = "PASS" if ratio_ok else "WARN"
     print(f"{status}: {path} | {fmt} | {width}x{height} | {path.stat().st_size} bytes")
-    return 0 if status == "PASS" else 1
+    return (0 if status == "PASS" else 1), (width, height)
+
+
+def main() -> int:
+    if len(sys.argv) != 2:
+        print("usage: inspect_card.py IMAGE_OR_DIRECTORY", file=sys.stderr)
+        return 2
+    path = Path(sys.argv[1]).expanduser()
+    if path.is_file():
+        status, _ = inspect_file(path)
+        return status
+    if not path.is_dir():
+        print(f"FAIL: path not found: {path}", file=sys.stderr)
+        return 1
+
+    images = sorted(path.glob("*.png"))
+    if len(images) != 4:
+        print(f"FAIL: expected exactly 4 PNG cards, found {len(images)} in {path}", file=sys.stderr)
+        return 1
+
+    results = [inspect_file(image) for image in images]
+    statuses = [status for status, _ in results]
+    dimensions_seen = {size for _, size in results if size is not None}
+    if len(dimensions_seen) != 1:
+        print(f"FAIL: cards do not share one exact pixel size: {sorted(dimensions_seen)}", file=sys.stderr)
+        return 1
+    return 0 if all(status == 0 for status in statuses) else 1
 
 
 if __name__ == "__main__":
