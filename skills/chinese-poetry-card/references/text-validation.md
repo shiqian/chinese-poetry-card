@@ -1,6 +1,6 @@
 # Text validation reference
 
-Create four content records before generation:
+Create one cover record and four card content records before generation:
 
 ```text
 title: <诗名>
@@ -39,6 +39,7 @@ footer_brand: 羽言课堂
 - Confirm the idiom definition and examples are natural, simple, and suitable for young children.
 - Confirm the idiom itself is appropriate for ages 4–8; relevance to the poem alone is not enough.
 - Confirm `羽言课堂` appears exactly and the feather motif is present on all four cards.
+- Confirm the cover title and recurring column mark are exact and contain no extra text.
 - Treat garbled, missing, duplicated, or invented characters as a failed generation.
 - Pay special attention to visually similar Chinese characters, simplified/traditional variants, names, place names, quotation marks, punctuation, and repeated headings.
 - Read the card once top-to-bottom for meaning and once character-by-character against the source-text file.

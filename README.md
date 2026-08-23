@@ -6,14 +6,16 @@ The primary audience is children aged 4–8 and the parents who read with them.
 
 ## What it creates
 
-For each poem, the skill produces a matched four-card series in a portrait 3:4 format:
+For each poem, the skill produces a cover plus a matched four-card series in a portrait 3:4 format:
+
+0. **封面** — the poem title and recurring `一诗一成语` column mark.
 
 1. **诗歌学习卡** — the complete poem and a simple plain-language meaning.
 2. **诗人简介卡** — an integrated introduction to the poet, including a memorable, source-supported distinction and a short description of poetic style.
 3. **诗歌背景卡** — non-obvious historical, geographic, cultural, and literary context that helps parents explain the poem.
 4. **成语学习卡** — a related idiom with a child-friendly definition and examples from daily life.
 
-The four cards are complementary rather than repetitive: poem → poet → hidden context → modern idiom use.
+The four cards are complementary rather than repetitive: poem → poet → hidden context → modern idiom use. The cover introduces the series and is posted first.
 
 ## Design principles
 
@@ -31,7 +33,7 @@ The four cards are complementary rather than repetitive: poem → poet → hidde
 skills/chinese-poetry-card/
 ├── SKILL.md
 ├── agents/openai.yaml
-├── assets/yueke-style-reference/   # style and content-architecture references
+├── assets/yueke-style-reference/   # cover + four style/content-architecture references
 ├── references/
 │   ├── card-layout.md
 │   ├── content-framework.md
@@ -64,7 +66,7 @@ OCR must match the normalized source text exactly and every observation must mee
 
 ## Outputs not included in the core skill
 
-A4 printing layouts, narrated videos, and platform-specific covers are downstream exports. They should be generated from the verified four-card set without changing the card content.
+A4 printing layouts and narrated videos are downstream exports. A series cover is part of the core five-image deliverable; platform-specific 9:16 cover variants remain downstream exports. All exports should be generated from the verified set without changing card content.
 
 ## License
 

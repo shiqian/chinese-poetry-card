@@ -11,6 +11,10 @@ The Yueke reference set establishes the reusable combination pattern for every n
 
 Reuse this structure and information hierarchy, not the Yueke-specific wording or facts. Every new poem needs its own verified person, setting, background, and related idiom.
 
+## Poet identity continuity
+
+Before image generation, define the poet's visual identity separately from the layout reference. The identity brief should describe the poet's age impression, face, hair or headwear, clothing, temperament, and historically suitable environment. Apply it consistently to the cover and the three classical cards. A reference poet's appearance must never be copied merely because the reference image is visually convenient.
+
 ## 诗歌学习卡：读懂诗
 
 Write a short, natural paraphrase of the complete poem. Mention the visible action and emotional situation, but do not explain why a season, place, object, or custom has its historical meaning. Those belong on the background card.

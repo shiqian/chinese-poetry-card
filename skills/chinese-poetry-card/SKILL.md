@@ -37,7 +37,7 @@ Create a cover as a required first asset for every complete series. The standard
 
 - Identify poem title, exact poem text, author, dynasty, and requested output directory.
 - Verify the poem text before generation when it is not supplied or when any character is uncertain.
-- Use `assets/yueke-style-reference/` as the canonical series reference. The images provide both visual-system and content-architecture references: learn the four-card division of labor, information hierarchy, amount of copy, panel composition, and progression from poem → poet → background → idiom, as well as layout, palette, border, typography, spacing, illustration finish, footer, and brand placement. Never copy their poem text, poet facts, historical claims, characters, scene-specific objects, idiom, or other poem-specific content into a new poem's cards.
+- Use `assets/yueke-style-reference/` as the canonical series reference. The images provide visual-system and content-architecture references: learn the four-card division of labor, information hierarchy, amount of copy, panel composition, and progression from poem → poet → background → idiom, as well as layout, palette, border, typography, spacing, illustration finish, footer, and brand placement. They must not become a character or scene template: never copy Zhao Shixiu's face, hairstyle, clothing, pose, body type, room, props, landscape, poem text, poet facts, historical claims, idiom, or other poem-specific content into a new poem's cards.
 - Default canvas: portrait 3:4; use one exact pixel width and height consistently across the cover and all four cards (1080×1440 is preferred for new sets, or preserve the supplied reference size). Matching only the aspect ratio is not sufficient.
 - Use stable filenames: `01_诗歌学习卡_<诗名>.png`, `02_诗人简介卡_<作者>.png`, `03_诗歌背景卡_<诗名>.png`, `04_成语学习卡_<成语>.png`.
 
@@ -55,17 +55,19 @@ Read [references/fact-checking.md](references/fact-checking.md) when researching
 
 Use the built-in image-generation tool. Treat a supplied image as a style/layout reference unless the user explicitly requests an edit. Put all required text in the prompt verbatim and ask for accurate, legible simplified Chinese.
 
+Before generation, create a short poet-identity brief for the new series: age impression, facial features, hairstyle/headwear, clothing silhouette and colors, temperament, pose language, and historically appropriate setting. Use that same brief for the cover and the first three cards. The poet may appear in different actions or compositions, but must remain recognizably the same person across the series. The fourth idiom card should use a modern child-centered scene and should not reuse the poet's character unless explicitly requested.
+
 Common visual rules:
 
 - ornate cream-and-gold frame, parchment plaques, restrained dark-green typography, and hand-painted picture-book / gouache texture;
 - same dimensions, border, footer ribbon, feather motif, typography hierarchy, and `羽言课堂` brand on the cover and all four cards;
-- the first three cards share the same poet identity, historical mood, and connected ancient setting;
+- the cover and first three cards share the new poem's own poet identity, historical mood, and connected ancient setting; they must not inherit the reference poet's identity;
 - the idiom card uses a modern child-centered scene, linked by mood rather than by copying the poem's objects;
 - poem-card lower panels should favor calm asymmetry—narrower poem slip on the left, wider `诗意小课堂` panel on the right, subtly staggered edges, and no heavy center divider;
 - one main title per card; no duplicate section titles;
 - no English, watermarks, unrelated characters, modern objects in ancient scenes, or unsupported decorative captions.
 
-When generating a new poem, treat the reference images as structural exemplars, not content templates. Reuse the proven combination pattern—plain poem meaning, integrated poet portrait, non-obvious background knowledge, and child-friendly idiom application—but write all content from the new poem's verified content record. Replace every poem-specific word, person, fact, scene, and idiom.
+When generating a new poem, treat the reference images as structural exemplars, not character or content templates. Reuse the proven combination pattern—plain poem meaning, integrated poet portrait, non-obvious background knowledge, and child-friendly idiom application—but write all content and the poet-identity brief for the new poem. Replace every poem-specific word, person, fact, face, costume, scene, prop, and idiom.
 
 If generated text is malformed, regenerate with a simpler layout and the exact text repeated. Do not accept unreadable, duplicated, or invented text.
 

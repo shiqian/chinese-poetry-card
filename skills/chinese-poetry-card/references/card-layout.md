@@ -1,6 +1,6 @@
 # Card layout reference
 
-The four images in `../assets/yueke-style-reference/` are the canonical series references. Use them to study both visual composition and content architecture: four complementary cards, their information density, panel arrangement, title hierarchy, and the progression from poem meaning to poet, hidden context, and modern idiom use. They are not content templates. Do not copy their wording, poet identity, historical facts, props, characters, or idiom into another poem's output.
+The five images in `../assets/yueke-style-reference/` are the canonical series references: one cover plus four learning cards. Use them to study both visual composition and content architecture: the cover's introduction role, four complementary cards, their information density, panel arrangement, title hierarchy, and the progression from poem meaning to poet, hidden context, and modern idiom use. They are not character templates. Do not copy their wording, Zhao Shixiu's facial identity, hairstyle, costume, pose, room, props, historical facts, or idiom into another poem's output.
 
 ## Canvas and hierarchy
 
@@ -15,6 +15,7 @@ The four images in `../assets/yueke-style-reference/` are the canonical series r
 - parchment cream plaques, muted gold trim, dark green or charcoal-green text, and a calm warm palette;
 - first three cards: one consistent poet identity, period mood, and connected scene details;
 - idiom card: modern child-life illustration, with a blue title as a gentle content distinction while retaining the same frame and brand system;
+- character continuity: define the new poet's visual identity before generation and keep that identity consistent across the cover, poem card, poet card, and background card; vary action and composition, not identity;
 - preserve negative space behind text and avoid placing busy details under copy.
 
 ## Card-specific composition

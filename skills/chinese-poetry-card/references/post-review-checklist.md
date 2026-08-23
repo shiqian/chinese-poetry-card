@@ -1,9 +1,10 @@
 # Post-publication review checklist
 
-Review the four cards in this order: poem → poet → background → idiom.
+Review the five images in this order: cover → poem → poet → background → idiom.
 
 ## Content
 
+- [ ] The cover contains only the verified poem title and approved recurring column mark.
 - [ ] A UTF-8 source-text file was prepared for each card.
 - [ ] OCR exact-text comparison passed.
 - [ ] No OCR observation fell below the minimum confidence threshold.
@@ -23,6 +24,8 @@ Review the four cards in this order: poem → poet → background → idiom.
 - [ ] All four files are PNGs with the same exact pixel dimensions and a 3:4 portrait ratio.
 - [ ] Border, parchment, footer, feather motif, and `羽言课堂` branding are consistent.
 - [ ] The first three cards use a continuous poet and ancient setting.
+- [ ] The cover and first three cards use the same newly designed poet identity: face, hair/headwear, clothing silhouette, and temperament remain consistent.
+- [ ] The new poet does not look like the Zhao Shixiu reference character unless the poem is actually by Zhao Shixiu.
 - [ ] The idiom card is modern but still calm and visually compatible.
 - [ ] Typography is legible at phone size and has consistent hierarchy.
 - [ ] The poem card does not look like a rigid two-column table: the poem slip is narrower, the `诗意小课堂` panel is wider, and the panel edges are subtly staggered.
