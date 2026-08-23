@@ -79,6 +79,14 @@ Read [references/post-review-checklist.md](references/post-review-checklist.md).
 python scripts/inspect_card.py <image-or-directory>
 ```
 
+For generated text, also prepare a UTF-8 source-text file containing exactly the text that should appear on the card and run the macOS Vision OCR check:
+
+```bash
+swift scripts/ocr_validate.swift <image> <source-text.txt> 0.80
+```
+
+The OCR check must pass exact normalized text comparison and the minimum confidence threshold. Any mismatch or low-confidence observation is a failed card, not a warning. Then complete the manual Chinese proofreading checklist; OCR does not replace visual review.
+
 Confirm text, facts, exact pixel dimensions, visual continuity, non-duplication, footer branding, and file naming. Report the five absolute paths and show the images when inline display is available.
 
 ## Optional downstream outputs

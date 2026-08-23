@@ -4,6 +4,9 @@ Review the four cards in this order: poem → poet → background → idiom.
 
 ## Content
 
+- [ ] A UTF-8 source-text file was prepared for each card.
+- [ ] OCR exact-text comparison passed.
+- [ ] No OCR observation fell below the minimum confidence threshold.
 - [ ] The poem is complete and correctly ordered.
 - [ ] The poem card uses simple white-language meaning only.
 - [ ] The poet card has one coherent introduction and no duplicate heading.
@@ -24,6 +27,13 @@ Review the four cards in this order: poem → poet → background → idiom.
 - [ ] Typography is legible at phone size and has consistent hierarchy.
 - [ ] The poem card does not look like a rigid two-column table: the poem slip is narrower, the `诗意小课堂` panel is wider, and the panel edges are subtly staggered.
 - [ ] No card has a duplicated title, malformed character, English text, watermark, or unrelated object.
+
+## Manual Chinese proofreading
+
+- [ ] Read every visible Chinese character against the source text, not only the large title.
+- [ ] Checked names, place names, dates, dynasty labels, punctuation, quotation marks, and simplified/traditional forms.
+- [ ] Checked for look-alike substitutions, missing characters, duplicated characters, and accidental extra captions.
+- [ ] If any character was too small or unclear to confirm, the card was marked not ready and regenerated.
 
 ## Delivery
 

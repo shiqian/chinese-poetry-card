@@ -19,6 +19,16 @@ footer_brand: 羽言课堂
 
 ## Required checks
 
+### Automated OCR gate
+
+- Prepare a UTF-8 source-text file containing exactly the visible text expected on each card.
+- Run `swift scripts/ocr_validate.swift <image> <source-text.txt> 0.80` on macOS Vision.
+- Require exact normalized comparison after removing whitespace and punctuation; any missing, added, or changed Chinese character fails the card.
+- Require every OCR observation to meet the configured minimum confidence (default `0.80`); low confidence is a failure, not a pass with warning.
+- If OCR is unavailable, do not claim automated text validation passed; use the manual review only as an explicitly limited fallback.
+
+### Manual Chinese proofreading
+
 - Compare every title, author character, dynasty label, and poem line character-for-character with the record.
 - Keep the author label exactly `[朝代]作者`.
 - Preserve poem line order and punctuation unless the user requests a different edition.
@@ -30,6 +40,8 @@ footer_brand: 羽言课堂
 - Confirm the idiom itself is appropriate for ages 4–8; relevance to the poem alone is not enough.
 - Confirm `羽言课堂` appears exactly and the feather motif is present on all four cards.
 - Treat garbled, missing, duplicated, or invented characters as a failed generation.
+- Pay special attention to visually similar Chinese characters, simplified/traditional variants, names, place names, quotation marks, punctuation, and repeated headings.
+- Read the card once top-to-bottom for meaning and once character-by-character against the source-text file.
 
 ## Content boundaries
 
