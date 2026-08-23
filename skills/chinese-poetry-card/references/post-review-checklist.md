@@ -23,6 +23,7 @@ Review the five images in this order: cover → poem → poet → background →
 
 - [ ] All four files are PNGs with the same exact pixel dimensions and a 3:4 portrait ratio.
 - [ ] Border, parchment, footer, feather motif, and `羽言课堂` branding are consistent.
+- [ ] Bottom ornaments beside the brand ribbon are poem-specific and do not mechanically copy the reference set; they support the poem's setting or learner-facing scene.
 - [ ] The first three cards use a continuous poet and ancient setting.
 - [ ] The cover and first three cards use the same newly designed poet identity: face, hair/headwear, clothing silhouette, and temperament remain consistent.
 - [ ] The new poet does not look like the Zhao Shixiu reference character unless the poem is actually by Zhao Shixiu.

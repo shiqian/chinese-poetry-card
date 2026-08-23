@@ -8,6 +8,7 @@ The five images in `../assets/yueke-style-reference/` are the canonical series r
 - Use a narrow decorated outer margin, generous inner padding, and a scroll-shaped footer.
 - Place one large title plaque near the top. Do not repeat the same title in a second panel.
 - Keep the `羽言课堂` footer and one small feather motif consistent across all cards.
+- Treat the decorative elements beside the bottom footer as poem-specific artwork, not fixed template content. Replace reference-set plants or ornaments with motifs derived from the new poem's imagery, setting, season, weather, or learner-facing scene. They may share the same restrained watercolor/gouache finish, but must not be copied unchanged from the reference card.
 
 ## Shared visual language
 

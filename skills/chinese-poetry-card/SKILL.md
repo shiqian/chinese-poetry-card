@@ -61,6 +61,7 @@ Common visual rules:
 
 - ornate cream-and-gold frame, parchment plaques, restrained dark-green typography, and hand-painted picture-book / gouache texture;
 - same dimensions, border, footer ribbon, feather motif, typography hierarchy, and `羽言课堂` brand on the cover and all four cards;
+- the decorative motifs flanking the bottom brand ribbon must be designed for the new poem and its setting; never mechanically copy bamboo, plants, clouds, or other poem-specific ornaments from the reference set. Choose restrained motifs from the poem's own imagery, place, season, weather, or child-life scene, and keep them subordinate to the brand mark. For this West Lake rain poem, suitable motifs include lotus leaves, willow, water ripples, rain clouds, and lake stones; use child-friendly meadow/flower motifs on the idiom card when appropriate;
 - the cover and first three cards share the new poem's own poet identity, historical mood, and connected ancient setting; they must not inherit the reference poet's identity;
 - the idiom card uses a modern child-centered scene, linked by mood rather than by copying the poem's objects;
 - poem-card lower panels should favor calm asymmetry—narrower poem slip on the left, wider `诗意小课堂` panel on the right, subtly staggered edges, and no heavy center divider;
@@ -89,7 +90,7 @@ swift scripts/ocr_validate.swift <image> <source-text.txt> 0.80
 
 The OCR check must pass exact normalized text comparison and the minimum confidence threshold. Any mismatch or low-confidence observation is a failed card, not a warning. Then complete the manual Chinese proofreading checklist; OCR does not replace visual review.
 
-Confirm text, facts, exact pixel dimensions, visual continuity, non-duplication, footer branding, and file naming. Report the five absolute paths and show the images when inline display is available.
+Confirm text, facts, exact pixel dimensions, visual continuity, poem-specific bottom ornaments, non-duplication, footer branding, and file naming. Report the five absolute paths and show the images when inline display is available.
 
 ## Optional downstream outputs
 
