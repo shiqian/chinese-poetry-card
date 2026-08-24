@@ -20,6 +20,7 @@ Create a cover as a required first asset for every complete series. The standard
 
 - Default canvas: the same exact 3:4 pixel dimensions as the card set; use `00_封面_<诗名>.png`. The cover must not merely share the ratio—it must share the exact width and height.
 - Use the poem card as a visual reference so the cover shares the same border, palette, illustration finish, ancient setting, and poet identity.
+- The cover layout must follow the reference cover in `assets/yueke-style-reference/00_cover-style.png`: preserve its overall title-panel placement, recurring-column mark position, author/related-idiom information hierarchy, illustration-to-text balance, and footer-brand placement. Adapt the poem-specific text and scene, but do not invent a different cover composition for a new poem.
 - Use this fixed information hierarchy:
   1. small series label: `一诗一成语`
   2. largest text: `《诗名》`
