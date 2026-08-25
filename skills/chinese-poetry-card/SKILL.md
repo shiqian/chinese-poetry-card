@@ -17,7 +17,7 @@ The default canvas is one exact 3:4 size for all five images (1080×1440 preferr
 
 ## Non-negotiable principles
 
-- One series: share the same dimensions, ornate card border, parchment/gold palette, illustration finish, title hierarchy, bottom scroll, feather mark, and exact 羽言课堂 brand placement. Keep these series identifiers on all five cards; keep the cover and first three cards in one historically connected world, while making the idiom scene modern but calm and compatible.
+- One series: share the same dimensions, ornate card border, illustration finish, title hierarchy, bottom scroll, feather mark, and exact 羽言课堂 brand placement. Keep these series identifiers on all five cards. The palette may shift with the poem's season, place, light, and mood, but should remain restrained and materially compatible with the series. Keep the cover and first three cards in one historically connected world, while making the idiom scene modern but calm and compatible.
 - Reference, do not copy: use every image in assets/yueke-style-reference/ to learn the five-card division, layout rhythm, information density, and visual language. Do not copy the reference poet's face, costume, props, scene, poem, facts, idiom, or poem-specific decoration.
 - New poet identity: define a short visual brief before generation (age, face, hair/headwear, clothing, temperament, setting) and use it consistently on the cover and first three cards. Change action and framing, not identity.
 - Own decoration: keep the fixed border, scroll, feather, and brand system, but derive secondary plants, objects, weather, and surrounding ornaments from the new poem and its learner-facing scene. Do not copy reference decoration mechanically.

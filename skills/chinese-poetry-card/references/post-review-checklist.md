@@ -16,7 +16,7 @@ Review in posting order: cover → poem → poet → background → idiom.
 ## Series and visual quality
 
 - [ ] All five PNGs have the same exact pixel dimensions and 3:4 ratio.
-- [ ] The same ornate border, bottom scroll, feather mark, palette, typography hierarchy, and 羽言课堂 placement appear on all five cards.
+- [ ] The same ornate border, bottom scroll, feather mark, typography hierarchy, and 羽言课堂 placement appear on all five cards; any poem-specific palette shift remains restrained and series-compatible.
 - [ ] The cover and first three cards use the same new poet identity and connected historical world.
 - [ ] The new poet is not an accidental copy of Zhao Shixiu; poem-specific decoration is not copied from the reference set.
 - [ ] The idiom card is modern, calm, printable, and still compatible with the series.

@@ -5,7 +5,7 @@ Use the five images in assets/yueke-style-reference/ as the canonical visual and
 ## Shared system
 
 - One exact portrait 3:4 size for all five images.
-- The ornate cream-and-gold card border, parchment panels, calm dark-green typography, hand-painted picture-book finish, bottom scroll, feather mark, and exact 羽言课堂 placement are fixed series identifiers. Keep them on every card, including the modern idiom card.
+- The ornate card border, parchment-panel/material language, hand-painted picture-book finish, bottom scroll, feather mark, and exact 羽言课堂 placement are fixed series identifiers. Let the palette respond to the poem's season, place, light, and mood; keep it restrained, readable, and compatible across all five cards, including the modern idiom card.
 - Cover and first three cards share one newly designed poet identity and connected historical world.
 - Idiom card uses a contemporary child-life scene and may use a gentle blue title distinction; it remains quiet, printable, and compatible.
 - Secondary plants, objects, weather, and surrounding ornaments come from the new poem or child-life scene. Keep them subordinate; do not copy reference plants or props unchanged.
