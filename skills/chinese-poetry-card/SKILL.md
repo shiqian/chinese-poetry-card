@@ -14,6 +14,14 @@ Create a matched five-image learning series for one Chinese classical poem. The 
 
 Do not add A4 or video deliverables unless explicitly requested; treat those as downstream export tasks.
 
+## Final output directory
+
+Unless the user explicitly requests another location, save the five final cards directly in the workspace directory:
+
+outputs/诗歌学习卡/
+
+Create the directory if it does not exist. Keep the cover and four learning cards together there; store A4 print files, video files, previews, and drafts in clearly separate subdirectories so they cannot be mistaken for the final cards.
+
 ## Required series cover
 
 Create a cover as a required first asset for every complete series. The standard deliverable is five images: one cover plus the four learning cards. The cover is separate from the four card content roles but must be generated and delivered with them.
@@ -36,7 +44,7 @@ Create a cover as a required first asset for every complete series. The standard
 
 ### 1. Resolve inputs
 
-- Identify poem title, exact poem text, author, dynasty, and requested output directory.
+- Identify poem title, exact poem text, author, dynasty, and output directory. Use outputs/诗歌学习卡/ as the default final-card directory.
 - Verify the poem text before generation when it is not supplied or when any character is uncertain.
 - Use `assets/yueke-style-reference/` as the canonical series reference. The images provide visual-system and content-architecture references: learn the four-card division of labor, information hierarchy, amount of copy, panel composition, and progression from poem → poet → background → idiom, as well as layout, palette, border, typography, spacing, illustration finish, footer, and brand placement. They must not become a character or scene template: never copy Zhao Shixiu's face, hairstyle, clothing, pose, body type, room, props, landscape, poem text, poet facts, historical claims, idiom, or other poem-specific content into a new poem's cards.
 - Default canvas: portrait 3:4; use one exact pixel width and height consistently across the cover and all four cards (1080×1440 is preferred for new sets, or preserve the supplied reference size). Matching only the aspect ratio is not sufficient.
@@ -91,7 +99,7 @@ swift scripts/ocr_validate.swift <image> <source-text.txt> 0.80
 
 The OCR check must pass exact normalized text comparison and the minimum confidence threshold. Any mismatch or low-confidence observation is a failed card, not a warning. Then complete the manual Chinese proofreading checklist; OCR does not replace visual review.
 
-Confirm text, facts, exact pixel dimensions, visual continuity, poem-specific bottom ornaments, non-duplication, footer branding, and file naming. Report the five absolute paths and show the images when inline display is available.
+Confirm text, facts, exact pixel dimensions, visual continuity, poem-specific bottom ornaments, non-duplication, footer branding, file naming, and placement in outputs/诗歌学习卡/. Report the five absolute paths and show the images when inline display is available.
 
 ## Optional downstream outputs
 
