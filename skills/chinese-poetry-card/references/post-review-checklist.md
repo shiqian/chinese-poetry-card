@@ -42,6 +42,6 @@ Review the five images in this order: cover → poem → poet → background →
 ## Delivery
 
 - [ ] Filenames clearly indicate card order and content.
-- [ ] The five final cards are directly in the workspace directory outputs/诗歌学习卡/.
+- [ ] The five final cards are directly in a poet-and-poem directory under outputs/诗歌学习卡/, named <诗人>_<诗歌题目>/.
 - [ ] Five absolute file paths are reported.
 - [ ] A4 and video exports are not mixed into the core final-card directory.
