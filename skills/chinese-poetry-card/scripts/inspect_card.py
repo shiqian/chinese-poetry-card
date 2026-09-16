@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check basic dimensions and file integrity for one card or a four-card set."""
+"""Check basic dimensions and file integrity for one card or a five-image set."""
 
 from __future__ import annotations
 
@@ -61,8 +61,8 @@ def main() -> int:
         return 1
 
     images = sorted(path.glob("*.png"))
-    if len(images) not in (4, 5):
-        print(f"FAIL: expected 4 cards or 5 images including a cover, found {len(images)} in {path}", file=sys.stderr)
+    if len(images) != 5:
+        print(f"FAIL: expected 5 images including a cover, found {len(images)} in {path}", file=sys.stderr)
         return 1
 
     results = [inspect_file(image) for image in images]

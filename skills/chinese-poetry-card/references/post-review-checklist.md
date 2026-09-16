@@ -1,47 +1,32 @@
-# Post-publication review checklist
+# Post-generation review checklist
 
-Review the five images in this order: cover → poem → poet → background → idiom.
+Review in posting order: cover → poem → poet → background → idiom.
 
-## Content
+## Content and accuracy
 
-- [ ] The cover contains only the verified poem title and approved recurring column mark.
-- [ ] A UTF-8 source-text file was prepared for each card.
-- [ ] OCR exact-text comparison passed.
-- [ ] No OCR observation fell below the minimum confidence threshold.
-- [ ] The poem is complete and correctly ordered.
-- [ ] The poem card uses simple white-language meaning only.
-- [ ] The poet card has one coherent introduction and no duplicate heading.
-- [ ] The poet card includes dates and one memorable, sourced distinction.
-- [ ] The poet's style is brief and understandable.
-- [ ] The background card contains unique, non-obvious context.
-- [ ] No background explanation is repeated unnecessarily on the poem card.
-- [ ] The idiom definition and examples are child-friendly and correct.
-- [ ] The idiom is appropriate for a 4–8-year-old learner: concrete or clearly illustrated, not unnecessarily rare, abstract, or allusion-heavy.
-- [ ] The idiom examples come from situations a child may recognize and use.
+- [ ] Five images exist and filenames show their order and role.
+- [ ] The cover follows the reference cover layout and contains only approved series text.
+- [ ] The poem is complete, correctly ordered, and uses the intended edition.
+- [ ] The poem meaning is plain language and does not repeat background research.
+- [ ] The poet card is one integrated introduction with dates, one memorable sourced distinction, and a brief style note; no duplicate title.
+- [ ] The background card contains unique, non-obvious, source-supported context.
+- [ ] The idiom is concrete or clearly illustrated, correct, and usable by a 4–8-year-old child.
+- [ ] All names, dates, place names, quotations, punctuation, simplified forms, and brand text are correct.
 
-## Visual continuity
+## Series and visual quality
 
-- [ ] All four files are PNGs with the same exact pixel dimensions and a 3:4 portrait ratio.
-- [ ] Border, parchment, footer, feather motif, and `羽言课堂` branding are consistent.
-- [ ] Bottom ornaments beside the brand ribbon are poem-specific and do not mechanically copy the reference set; they support the poem's setting or learner-facing scene.
-- [ ] The first three cards use a continuous poet and ancient setting.
-- [ ] The cover and first three cards use the same newly designed poet identity: face, hair/headwear, clothing silhouette, and temperament remain consistent.
-- [ ] The new poet does not look like the Zhao Shixiu reference character unless the poem is actually by Zhao Shixiu.
-- [ ] The idiom card is modern but still calm and visually compatible.
-- [ ] Typography is legible at phone size and has consistent hierarchy.
-- [ ] The poem card does not look like a rigid two-column table: the poem slip is narrower, the `诗意小课堂` panel is wider, and the panel edges are subtly staggered.
-- [ ] No card has a duplicated title, malformed character, English text, watermark, or unrelated object.
+- [ ] All five PNGs have the same exact pixel dimensions and 3:4 ratio.
+- [ ] The same ornate border, bottom scroll, feather mark, typography hierarchy, and 羽言课堂 placement appear on all five cards; any poem-specific palette shift remains restrained and series-compatible.
+- [ ] The cover and first three cards use the same new poet identity and connected historical world.
+- [ ] The new poet is not an accidental copy of Zhao Shixiu; poem-specific decoration is not copied from the reference set.
+- [ ] The idiom card is modern, calm, printable, and still compatible with the series.
+- [ ] Text is legible; no duplicate headings, malformed characters, English, watermark, or unrelated object appears.
 
-## Manual Chinese proofreading
+## Text gate
 
-- [ ] Read every visible Chinese character against the source text, not only the large title.
-- [ ] Checked names, place names, dates, dynasty labels, punctuation, quotation marks, and simplified/traditional forms.
-- [ ] Checked for look-alike substitutions, missing characters, duplicated characters, and accidental extra captions.
-- [ ] If any character was too small or unclear to confirm, the card was marked not ready and regenerated.
+- [ ] OCR exact comparison passed where macOS Vision is available.
+- [ ] No observed text is below the minimum confidence threshold.
+- [ ] Every visible Chinese character was manually compared with the UTF-8 source record.
+- [ ] Any unclear character was treated as a failure and regenerated.
 
-## Delivery
-
-- [ ] Filenames clearly indicate card order and content.
-- [ ] The five final cards are directly in a poet-and-poem directory under outputs/诗歌学习卡/, named <诗人>_<诗歌题目>/.
-- [ ] Five absolute file paths are reported.
-- [ ] A4 and video exports are not mixed into the core final-card directory.
+The five final cards must be directly in a poet-and-poem directory under outputs/诗歌学习卡/, named <诗人>_<诗歌题目>/. Report five absolute paths. Keep A4 and video exports outside the core five-card directory.
