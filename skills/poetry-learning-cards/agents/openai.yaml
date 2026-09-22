@@ -1,0 +1,4 @@
+interface:
+  display_name: "羽言课堂诗歌学习卡"
+  short_description: "Create five researched poetry cards with ImageGen"
+  default_prompt: "Use $poetry-learning-cards to create five 羽言课堂 poetry cards using the 秋词 visual references and ImageGen, with sourced poet stories and child-friendly explanations."

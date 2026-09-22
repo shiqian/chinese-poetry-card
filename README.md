@@ -1,14 +1,14 @@
-# Chinese Poetry Card
+# Poetry Learning Cards
 
-`chinese-poetry-card` is a reusable Codex skill for creating calm, child-friendly Chinese classical-poetry learning series for `羽言课堂`.
+`poetry-learning-cards` is a Codex skill for creating illustrated Chinese poetry learning series for `羽言课堂`. It replaces the former `chinese-poetry-card` skill.
 
-The primary audience is children aged 4–8 and the parents who read with them.
+The audience is parents reading together with children.
 
 ## What it creates
 
 For each poem, the skill produces a cover plus a matched four-card series in a portrait 3:4 format:
 
-0. **封面** — the poem title and recurring `一诗一成语` column mark.
+0. **封面** — `一诗一成语`, poem title, author with dynasty (for example, `作者：[唐]刘禹锡`), related idiom, and `羽言课堂`.
 
 1. **诗歌学习卡** — the complete poem and a simple plain-language meaning.
 2. **诗人简介卡** — an integrated introduction to the poet, including a memorable, source-supported distinction and a short description of poetic style.
@@ -19,10 +19,12 @@ The four cards are complementary rather than repetitive: poem → poet → hidde
 
 ## Design principles
 
-- Use 3:4 portrait cards with consistent dimensions across a set.
+- Deliver each card at exactly **1080 × 1440 px**.
+- Use the available `imagegen` skill and built-in ImageGen to generate text and artwork together in each card; do not add text as a separate overlay.
+- Design the poet according to their age, personality, and historical context; do not copy the reference character.
 - Keep the first three cards visually continuous in their poet, period, and classical setting.
 - Use a modern child-centered scene for the idiom card while retaining the series frame and brand system.
-- Use simple, concrete language suitable for ages 4–8.
+- Use simple, concrete language suitable for parents reading with children.
 - Prefer familiar, imageable idioms; avoid unnecessarily rare, abstract, or allusion-heavy choices.
 - Keep poem meaning separate from historical background so each card has a distinct purpose.
 - Verify historical claims and distinguish primary sources, later records, modern scholarship, and disputed traditions.
@@ -30,39 +32,32 @@ The four cards are complementary rather than repetitive: poem → poet → hidde
 ## Skill contents
 
 ```text
-skills/chinese-poetry-card/
+skills/poetry-learning-cards/
 ├── SKILL.md
 ├── agents/openai.yaml
-├── assets/yueke-style-reference/   # cover + four style/content-architecture references
-├── references/
-│   ├── card-layout.md
-│   ├── content-framework.md
-│   ├── fact-checking.md
-│   ├── post-review-checklist.md
-│   └── text-validation.md
-└── scripts/
-    ├── inspect_card.py
-    └── ocr_validate.swift
+├── assets/qiuci-reference/   # five 秋词 visual references
+└── references/
+    ├── card-contract.md
+    ├── research-and-sourcing.md
+    ├── visual-system.md
+    └── validation.md
 ```
 
-The Yueke reference images are used as series references for visual treatment and information architecture only. New poems must use their own verified text, people, facts, scenes, and idioms.
+The 秋词 reference images establish visual treatment and information architecture. New poems use their own verified text, characters, facts, scenes, and idioms.
 
-## Validation
+## Use and validation
 
-Check card dimensions and set consistency:
+Copy `skills/poetry-learning-cards/` into your Codex skills directory and invoke:
 
-```bash
-python3 skills/chinese-poetry-card/scripts/inspect_card.py path/to/cards
+```text
+用 $poetry-learning-cards 制作《秋词》五张学习卡。
 ```
 
-For generated text on macOS, prepare a UTF-8 source-text file containing the exact visible copy and run the Vision OCR gate:
+The environment must provide the `imagegen` skill and image-generation capability.
 
-```bash
-swift skills/chinese-poetry-card/scripts/ocr_validate.swift \
-  path/to/card.png path/to/source-text.txt 0.80
-```
+Inspect generated Chinese text character by character for typos, malformed characters, omissions, repetitions, and garbled text. OCR may assist visual review. Correct errors using ImageGen and recheck the whole card. Read actual image dimensions before delivery.
 
-OCR must match the normalized source text exactly and every observation must meet the confidence threshold. Manual Chinese proofreading is still required for names, poem lines, place names, dates, punctuation, and visually similar characters.
+Save each set under `outputs/poetry-learning-cards/<诗人>_<诗题>/`, including its research, source text, prompts, generated assets, and previews. The skill specifies the owner's local project path; users elsewhere should provide their own destination.
 
 ## Outputs not included in the core skill
 
