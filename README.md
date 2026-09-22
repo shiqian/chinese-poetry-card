@@ -17,6 +17,30 @@ For each poem, the skill produces a cover plus a matched four-card series in a p
 
 The four cards are complementary rather than repetitive: poem → poet → hidden context → modern idiom use. The cover introduces the series and is posted first.
 
+## Visual reference: 秋词 reference cards
+
+The five reference cards below show the intended visual language, information hierarchy, portrait 3:4 layout, gold frame, paper panels, illustration style, and `羽言课堂` branding. New poem sets should follow this structure while using their own verified poem text, poet design, background, and idiom.
+
+### 0. 封面
+
+![秋词封面](docs/qiuci-reference/00_封面_秋词.png)
+
+### 1. 诗歌学习卡
+
+![秋词诗歌学习卡](docs/qiuci-reference/01_诗歌学习卡_秋词.png)
+
+### 2. 诗人简介卡
+
+![刘禹锡诗人简介卡](docs/qiuci-reference/02_诗人简介卡_刘禹锡.png)
+
+### 3. 诗歌背景卡
+
+![秋词诗歌背景卡](docs/qiuci-reference/03_诗歌背景卡_秋词.png)
+
+### 4. 成语学习卡
+
+![意气风发成语学习卡](docs/qiuci-reference/04_成语学习卡_意气风发.png)
+
 ## Design principles
 
 - Deliver each card at exactly **1080 × 1440 px**.
